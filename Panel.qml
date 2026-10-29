@@ -776,6 +776,7 @@ Panel {
           }
 
           Text {
+            textFormat: Text.PlainText
             visible: !root.current
             text: Strings.T("Buscando a previsão…")
             color: Anatomy.muted
