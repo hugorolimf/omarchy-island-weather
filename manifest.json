@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.hugorolimf.weather",
+  "name": "Island Weather",
+  "version": "1.0.0",
+  "author": "Hugo Rolim Filho",
+  "license": "MIT",
+  "homepage": "https://github.com/hugorolimf/omarchy-island-weather",
+  "description": "Weather pill with detail popup, in the Island look (stroke icons, anatomy panel), in English or Portuguese",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Island Weather",
+    "description": "Weather pill with detail popup",
+    "category": "Info",
+    "allowMultiple": false,
+    "settingsForm": "weatherSettings"
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.weather"
+  }
+}
