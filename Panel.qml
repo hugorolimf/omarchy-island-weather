@@ -505,6 +505,10 @@ Panel {
     function edit(): void { root.openFromHotkey(); root.startEditingLocation() }
   }
 
+  // the panel's height follows its content smoothly while open (the forecast arriving or changing)
+  property real panelHeight: weatherColumn.implicitHeight
+  Behavior on panelHeight { enabled: root.opened; NumberAnimation { duration: 280; easing.type: Easing.Bezier; easing.bezierCurve: Anatomy.ease } }
+
   KeyboardPanel {
     id: panel
     anchorItem: root.anchorItem
@@ -513,7 +517,7 @@ Panel {
     open: root.opened
     focusTarget: keyCatcher
     contentWidth: panel.fittedContentWidth(Style.space(460))
-    contentHeight: panel.fittedContentHeight(weatherColumn.implicitHeight)
+    contentHeight: panel.fittedContentHeight(root.panelHeight)
 
     PanelKeyCatcher {
       id: keyCatcher
