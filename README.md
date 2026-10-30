@@ -18,6 +18,15 @@ Current weather, the next hours and days, and the city search, drawn with thin s
 - 🔄 **Drop-in.** It's Omarchy's own `omarchy.weather` underneath (same behaviour, same
   shortcuts and IPC): enabling it takes the original's place on the bar.
 
+## See it
+
+Recorded on a real desktop, mouse and clicks included. The panel follows the
+system language; this take is in Portuguese.
+
+**Now, the next hours and the next days**, opened from the cloud in the bar.
+
+![Weather](assets/weather.gif)
+
 ## Requirements
 
 [Island Kit](https://github.com/hugorolimf/omarchy-island-kit): the panel is drawn with it.
